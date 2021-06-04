@@ -1,5 +1,5 @@
 //
-//  LessonAppApp.swift
+//  LessonApp.swift
 //  LessonApp
 //
 //  Created by Callum Day Ham on 6/3/21.
@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct LessonAppApp: App {
+struct LessonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .environmentObject(ContentModel())
         }
     }
 }
