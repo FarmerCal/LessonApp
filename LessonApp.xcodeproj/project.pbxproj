@@ -12,6 +12,10 @@
 		F2E0EFD52669C198007C5AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E0EFD42669C198007C5AA2 /* Assets.xcassets */; };
 		F2E0EFD82669C198007C5AA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E0EFD72669C198007C5AA2 /* Preview Assets.xcassets */; };
 		F2E0EFE72669C220007C5AA2 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0EFE62669C220007C5AA2 /* ContentModel.swift */; };
+		F2E0EFEE2669EAB2007C5AA2 /* lessons.json in Resources */ = {isa = PBXBuildFile; fileRef = F2E0EFED2669EAB2007C5AA2 /* lessons.json */; };
+		F2E0EFF22669EAE6007C5AA2 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0EFF12669EAE6007C5AA2 /* DataServices.swift */; };
+		F2E0EFF52669EB17007C5AA2 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = F2E0EFF42669EB17007C5AA2 /* style.html */; };
+		F2E0EFF82669EDFF007C5AA2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0EFF72669EDFF007C5AA2 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F2E0EFD72669C198007C5AA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2E0EFD92669C198007C5AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2E0EFE62669C220007C5AA2 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		F2E0EFED2669EAB2007C5AA2 /* lessons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lessons.json; sourceTree = "<group>"; };
+		F2E0EFF12669EAE6007C5AA2 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		F2E0EFF42669EB17007C5AA2 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
+		F2E0EFF72669EDFF007C5AA2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 				F2E0EFE32669C1E0007C5AA2 /* Views */,
 				F2E0EFE22669C1D7007C5AA2 /* ViewModels */,
 				F2E0EFE52669C1F5007C5AA2 /* Utilites */,
+				F2E0EFEC2669EA88007C5AA2 /* Data */,
 				F2E0EFD42669C198007C5AA2 /* Assets.xcassets */,
 				F2E0EFD92669C198007C5AA2 /* Info.plist */,
 				F2E0EFD62669C198007C5AA2 /* Preview Content */,
@@ -93,6 +102,7 @@
 		F2E0EFE42669C1EA007C5AA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F2E0EFF72669EDFF007C5AA2 /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,8 +110,18 @@
 		F2E0EFE52669C1F5007C5AA2 /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
+				F2E0EFF12669EAE6007C5AA2 /* DataServices.swift */,
 			);
 			path = Utilites;
+			sourceTree = "<group>";
+		};
+		F2E0EFEC2669EA88007C5AA2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F2E0EFED2669EAB2007C5AA2 /* lessons.json */,
+				F2E0EFF42669EB17007C5AA2 /* style.html */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +183,8 @@
 			files = (
 				F2E0EFD82669C198007C5AA2 /* Preview Assets.xcassets in Resources */,
 				F2E0EFD52669C198007C5AA2 /* Assets.xcassets in Resources */,
+				F2E0EFF52669EB17007C5AA2 /* style.html in Resources */,
+				F2E0EFEE2669EAB2007C5AA2 /* lessons.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +198,8 @@
 				F2E0EFD32669C192007C5AA2 /* HomeView.swift in Sources */,
 				F2E0EFD12669C192007C5AA2 /* LessonApp.swift in Sources */,
 				F2E0EFE72669C220007C5AA2 /* ContentModel.swift in Sources */,
+				F2E0EFF22669EAE6007C5AA2 /* DataServices.swift in Sources */,
+				F2E0EFF82669EDFF007C5AA2 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
