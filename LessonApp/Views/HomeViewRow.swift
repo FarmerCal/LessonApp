@@ -73,6 +73,7 @@ struct HomeViewRow: View{
 struct HomeViewRow_Previews: PreviewProvider{
     
     static var previews: some View{
+       
         HomeViewRow(image: "swift", title: "Learn Swift", description: "an epic description", count: "20 Lessons", time: "2 Hours")
     }
 }

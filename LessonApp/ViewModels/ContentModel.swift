@@ -10,44 +10,30 @@ import Foundation
 class ContentModel: ObservableObject{
     
     @Published var modules = [Module]()
+    
+    // store data for current module
+    @Published var currentModule: Module?
+    var currentModuleIndex = 0
+    
     var styleData: Data?
     
     init(){
         
         self.modules = DataServices.parseLessonsJson()
         self.styleData = DataServices.parseStyleHtml()
-//
-//         getLocalData()
     }
     
-    func getLocalData(){
-     
-        let jsonUrl = Bundle.main.url(forResource: "lessons", withExtension: "json")
+    func beginModule(_ moduleid:Int){
         
-        do{
+        for index in 0..<modules.count{
             
-        let jsonData = try Data(contentsOf: jsonUrl!)
-            
-            let jsonDecoder = JSONDecoder()
-            
-            let modules = try jsonDecoder.decode([Module].self, from: jsonData)
-            
-            self.modules = modules
-        }
-        catch{
-            print("error 1")
+            if modules[index].id == moduleid{
+                
+                currentModuleIndex = index
+                break
+            }
         }
         
-        let styleUrl = Bundle.main.url(forResource: "style", withExtension: "html")
-        
-        do{
-            
-            let styleData = try Data(contentsOf: styleUrl!)
-            self.styleData = styleData
-            
-        }
-        catch{
-            print("error 2")
-        }
+        currentModule = modules[currentModuleIndex]
     }
 }
