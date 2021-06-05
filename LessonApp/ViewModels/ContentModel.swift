@@ -14,7 +14,10 @@ class ContentModel: ObservableObject{
     
     init(){
         
-        getLocalData()
+        self.modules = DataServices.parseLessonsJson()
+        self.styleData = DataServices.parseStyleHtml()
+//
+//         getLocalData()
     }
     
     func getLocalData(){
