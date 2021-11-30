@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F27D41862755E66F002F05C8 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D41852755E66F002F05C8 /* RectangleCard.swift */; };
 		F2E0EFD12669C192007C5AA2 /* LessonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0EFD02669C192007C5AA2 /* LessonApp.swift */; };
 		F2E0EFD32669C192007C5AA2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0EFD22669C192007C5AA2 /* HomeView.swift */; };
 		F2E0EFD52669C198007C5AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E0EFD42669C198007C5AA2 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F27D41852755E66F002F05C8 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		F2E0EFCD2669C192007C5AA2 /* LessonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E0EFD02669C192007C5AA2 /* LessonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonApp.swift; sourceTree = "<group>"; };
 		F2E0EFD22669C192007C5AA2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				F2E0EFFE266B3AA6007C5AA2 /* ContentView.swift */,
 				F2E0F002266B452B007C5AA2 /* ContentViewRow.swift */,
 				F2E0F006266C0DD8007C5AA2 /* ContentDetialView.swift */,
+				F27D41852755E66F002F05C8 /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				F2E0F003266B452B007C5AA2 /* ContentViewRow.swift in Sources */,
 				F2E0EFFC266B02C1007C5AA2 /* HomeViewRow.swift in Sources */,
 				F2E0F007266C0DD8007C5AA2 /* ContentDetialView.swift in Sources */,
+				F27D41862755E66F002F05C8 /* RectangleCard.swift in Sources */,
 				F2E0EFF82669EDFF007C5AA2 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
